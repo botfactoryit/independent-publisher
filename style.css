@@ -2180,7 +2180,7 @@ table th {
 }
 
 .single-column-layout.single .site-header-info {
-	display: none;
+	/* display: none; */
 }
 
 .single-column-layout.single .entry-meta {

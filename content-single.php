@@ -29,23 +29,15 @@
 				<?php do_action( 'independent_publisher_entry_title_meta', $separator = ' | ' ); ?>
 			</h2>
 		<?php else: ?>
-			<h2 class="entry-title-meta">
-			<span class="entry-title-meta-author">
-				<?php if ( !independent_publisher_categorized_blog() ) {
-					echo independent_publisher_entry_meta_author_prefix() . ' ';
-				}
-				independent_publisher_posted_author() ?>
-			</span>
-				<?php if ( independent_publisher_categorized_blog() ) {
-					echo independent_publisher_entry_meta_category_prefix() . ' ' . independent_publisher_post_categories();
-				} ?>
+			<h1 class="entry-title p-name" style="margin-bottom: 10px" itemprop="name"><?php the_title(); ?></h1>
+			
+			<h2 class="entry-title-meta" style="margin-bottom: 15px">
 				<span class="entry-title-meta-post-date">
-				<span class="sep"> <?php echo apply_filters( 'independent_publisher_entry_meta_separator', '|' ); ?> </span>
 					<?php independent_publisher_posted_on_date() ?>
-			</span>
+				</span>
+				
 				<?php do_action( 'independent_publisher_entry_title_meta', $separator = ' | ' ); ?>
 			</h2>
-			<h1 class="entry-title p-name" itemprop="name"><?php the_title(); ?></h1>
 		<?php endif; ?>
 	</header>
 	<!-- .entry-header -->
