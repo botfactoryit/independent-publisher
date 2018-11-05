@@ -1346,4 +1346,11 @@ if ( ! function_exists( 'independent_publisher_post_link_title_common' ) ) :
 	}
 endif;
 
+function add_google_fonts() {
+	wp_enqueue_style( 'google-fonts-titles', 'https://fonts.googleapis.com/css?family=Montserrat:400,700' ); 
+	wp_enqueue_style( 'google-fonts-content', 'https://fonts.googleapis.com/css?family=Work+Sans:400,700' ); 
+}
+
+add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
+
 ?>
