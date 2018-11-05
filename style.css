@@ -2859,7 +2859,7 @@ table th {
 	.entry-content,
 	.entry-summary,
 	#comments {
-		font-size: 18px;
+		/* font-size: 18px; */
 		/* line-height: 1.4; */
 		width: 100%;
 	}
