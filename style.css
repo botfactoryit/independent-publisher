@@ -2627,7 +2627,7 @@ table th {
 	}
 
 	.single .site-header-info {
-		display: none;
+		/* display: none; */
 	}
 
 	.site-header {
