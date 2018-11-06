@@ -69,6 +69,7 @@
 	</div>
 	<!-- .entry-content -->
 
+	<!--
 	<?php independent_publisher_posted_author_bottom_card() ?>
 
 	<footer class="entry-meta">
@@ -81,9 +82,8 @@
 				</button>
 			</div>
 		<?php endif; ?>
-
-		<?php edit_post_link( __( 'Edit', 'independent-publisher' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer>
+	-->
 	<!-- .entry-meta -->
 
 </article><!-- #post-<?php the_ID(); ?> -->
