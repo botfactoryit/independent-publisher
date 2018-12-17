@@ -1965,17 +1965,17 @@ article.first-post {
 .entry-summary,
 .widget-area .widget,
 .comment {
-	-webkit-hyphens: auto;
+	/*-webkit-hyphens: auto;
 	-moz-hyphens: auto;
 	hyphens: auto;
-	word-wrap: break-word;
+	word-wrap: break-word;*/
 }
 
 .entry-title {
-	-webkit-hyphens: none;
+	/*-webkit-hyphens: none;
 	-moz-hyphens: none;
 	hyphens: none;
-	word-wrap: break-word;
+	word-wrap: break-word;*/
 }
 
 .widget_search input[type="text"] {
