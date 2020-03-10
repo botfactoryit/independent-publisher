@@ -1357,7 +1357,7 @@ add_filter('template_redirect', 'redir');
 
 function redir() {
 	global $post;
-	if (get_bloginfo() == 'BotFactory Blog' && in_category('TrackBot') && !in_category('FibraClick')) {
+	if (get_bloginfo() == 'BotFactory Blog' && is_single() && in_category('TrackBot') && !in_category('FibraClick')) {
 		wp_redirect('https://blog.trackbot.eu/it/' . $post->post_name . '/');
 		exit;
 	}
