@@ -1353,4 +1353,14 @@ function add_google_fonts() {
 
 add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
 
+add_filter('template_redirect', 'redir');
+
+function redir() {
+	global $post;
+	if (get_bloginfo() == 'BotFactory Blog' && in_category('TrackBot') && !in_category('FibraClick')) {
+		wp_redirect('https://blog.trackbot.eu/it/' . $post->post_name . '/');
+		exit;
+	}
+}
+
 ?>
